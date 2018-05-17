@@ -487,8 +487,8 @@ pre,
   margin: 20px 0;
   padding: 0;
   font-size: 13px;
-  color: #c5c8c6;
-  background: #1d1f21;
+  color: #eaeaea;
+  background: #000;
   line-height: 1.6;
 }
 pre,
@@ -508,7 +508,7 @@ pre {
 }
 pre code {
   padding: 0;
-  color: #c5c8c6;
+  color: #eaeaea;
   background: none;
   text-shadow: none;
 }
@@ -531,7 +531,7 @@ pre code {
 }
 .highlight figcaption {
   font-size: 1em;
-  color: #c5c8c6;
+  color: #eaeaea;
   line-height: 1em;
   margin-bottom: 1em;
 }
@@ -545,23 +545,23 @@ pre code {
 }
 .highlight figcaption a {
   float: right;
-  color: #c5c8c6;
+  color: #eaeaea;
 }
 .highlight figcaption a:hover {
-  border-bottom-color: #c5c8c6;
+  border-bottom-color: #eaeaea;
 }
 .highlight .gutter pre {
   padding-left: 10px;
   padding-right: 10px;
-  color: #888f96;
+  color: #666;
   text-align: right;
-  background-color: #000;
+  background-color: #292929;
 }
 .highlight .code pre {
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
-  background-color: #1d1f21;
+  background-color: #000;
 }
 .highlight .line {
   height: 20px;
@@ -585,7 +585,7 @@ pre .addition {
   background: #800000;
 }
 pre .meta {
-  color: #b294bb;
+  color: #c397d8;
 }
 pre .comment {
   color: #969896;
@@ -602,7 +602,7 @@ pre .html .doctype,
 pre .css .id,
 pre .css .class,
 pre .css .pseudo {
-  color: #c66;
+  color: #d54e53;
 }
 pre .number,
 pre .preprocessor,
@@ -611,7 +611,7 @@ pre .literal,
 pre .params,
 pre .constant,
 pre .command {
-  color: #de935f;
+  color: #e78c45;
 }
 pre .ruby .class .title,
 pre .css .rules .attribute,
@@ -624,11 +624,11 @@ pre .xml .cdata,
 pre .special,
 pre .number,
 pre .formula {
-  color: #b5bd68;
+  color: #b9ca4a;
 }
 pre .title,
 pre .css .hexcolor {
-  color: #8abeb7;
+  color: #70c0b1;
 }
 pre .function,
 pre .python .decorator,
@@ -638,11 +638,11 @@ pre .ruby .title .keyword,
 pre .perl .sub,
 pre .javascript .title,
 pre .coffeescript .title {
-  color: #81a2be;
+  color: #7aa6da;
 }
 pre .keyword,
 pre .javascript .function {
-  color: #b294bb;
+  color: #c397d8;
 }
 .full-image.full-image.full-image.full-image {
   border: none;
@@ -1742,110 +1742,18 @@ pre .javascript .function {
   max-width: 120px;
   height: auto;
   border: 1px solid #eee;
-/* 头像圆形 */
-  border-radius: 80px;
-  -webkit-border-radius: 80px;
-  -moz-border-radius: 80px;
-  box-shadow: inset 0 -1px 0 #333 sf;
-/* 设置循环动画 [animation: (play)动画名称 (2s)动画播放时长单位秒或微秒 (ase-out)动画播放的速度曲线为以低速结束 
-    (1s)等待1秒然后开始动画 (1)动画播放次数(infinite为循环播放) ]*/
-/* 鼠标经过头像旋转360度 */
-  -webkit-transition: -webkit-transform 1s ease-out;
-  -moz-transition: -moz-transform 1s ease-out;
-  transition: transform 1s ease-out;
 }
-img:hover {
-/* 鼠标经过停止头像旋转 
-  -webkit-animation-play-state:paused;
-  animation-play-state:paused;*/
-/* 鼠标经过头像旋转360度 */
-  -webkit-transform: rotateZ(360deg);
-  -moz-transform: rotateZ(360deg);
-  -webkit-transform: rotateZ(360deg);
-  -moz-transform: rotateZ(360deg);
-  -ms-transform: rotateZ(360deg);
-  -o-transform: rotateZ(360deg);
-  transform: rotateZ(360deg);
+.site-author-name {
+  margin: 0;
+  text-align: center;
+  color: #222;
+  font-weight: 600;
 }
-@-webkit-keyframes play {
-  0% {
-    -webkit-transform: rotateZ(0deg);
-  }
-  100% {
-    -webkit-transform: rotateZ(-360deg);
-  }
-}
-@-moz-keyframes play {
-  0% {
-    -moz-transform: rotateZ(0deg);
-  }
-  100% {
-    -moz-transform: rotateZ(-360deg);
-  }
-}
-@-moz-keyframes play {
-  0% {
-    -webkit-transform: rotateZ(0deg);
-    -moz-transform: rotateZ(0deg);
-    -ms-transform: rotateZ(0deg);
-    -o-transform: rotateZ(0deg);
-    transform: rotateZ(0deg);
-  }
-  100% {
-    -webkit-transform: rotateZ(-360deg);
-    -moz-transform: rotateZ(-360deg);
-    -ms-transform: rotateZ(-360deg);
-    -o-transform: rotateZ(-360deg);
-    transform: rotateZ(-360deg);
-  }
-}
-@-webkit-keyframes play {
-  0% {
-    -webkit-transform: rotateZ(0deg);
-    -moz-transform: rotateZ(0deg);
-    -ms-transform: rotateZ(0deg);
-    -o-transform: rotateZ(0deg);
-    transform: rotateZ(0deg);
-  }
-  100% {
-    -webkit-transform: rotateZ(-360deg);
-    -moz-transform: rotateZ(-360deg);
-    -ms-transform: rotateZ(-360deg);
-    -o-transform: rotateZ(-360deg);
-    transform: rotateZ(-360deg);
-  }
-}
-@-o-keyframes play {
-  0% {
-    -webkit-transform: rotateZ(0deg);
-    -moz-transform: rotateZ(0deg);
-    -ms-transform: rotateZ(0deg);
-    -o-transform: rotateZ(0deg);
-    transform: rotateZ(0deg);
-  }
-  100% {
-    -webkit-transform: rotateZ(-360deg);
-    -moz-transform: rotateZ(-360deg);
-    -ms-transform: rotateZ(-360deg);
-    -o-transform: rotateZ(-360deg);
-    transform: rotateZ(-360deg);
-  }
-}
-@keyframes play {
-  0% {
-    -webkit-transform: rotateZ(0deg);
-    -moz-transform: rotateZ(0deg);
-    -ms-transform: rotateZ(0deg);
-    -o-transform: rotateZ(0deg);
-    transform: rotateZ(0deg);
-  }
-  100% {
-    -webkit-transform: rotateZ(-360deg);
-    -moz-transform: rotateZ(-360deg);
-    -ms-transform: rotateZ(-360deg);
-    -o-transform: rotateZ(-360deg);
-    transform: rotateZ(-360deg);
-  }
+.site-description {
+  margin-top: 0;
+  text-align: center;
+  font-size: 13px;
+  color: #999;
 }
 .site-state {
   overflow: hidden;
@@ -1915,7 +1823,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fffada;
+  background: #b8e7db;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2953,7 +2861,6 @@ img:hover {
   background: #fff;
   box-shadow: initial;
   border-radius: initial;
-  opacity: 0;
 }
 .sidebar-inner.affix {
   position: fixed;
@@ -3082,4 +2989,64 @@ img:hover {
   .post-body {
     text-align: justify;
   }
+}
+body {
+  background-image: url("/images/background_custom.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+::-webkit-scrollbar-button:start:increment,
+::-webkit-scrollbar-button:end:decrement {
+  display: none;
+}
+::-webkit-scrollbar-corner {
+  display: block;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: rgba(0,0,0,0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 8px;
+  background-color: rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+}
+::-webkit-scrollbar-track:hover {
+  background-color: rgba(0,0,0,0.15);
+}
+::-webkit-scrollbar-button:start {
+  width: 10px;
+  height: 10px;
+  background: url("../images/scrollbar_arrow.png") no-repeat 0 0;
+}
+::-webkit-scrollbar-button:start:hover {
+  background: url("../images/scrollbar_arrow.png") no-repeat -15px 0;
+}
+::-webkit-scrollbar-button:start:active {
+  background: url("../images/scrollbar_arrow.png") no-repeat -30px 0;
+}
+::-webkit-scrollbar-button:end {
+  width: 10px;
+  height: 10px;
+  background: url("../images/scrollbar_arrow.png") no-repeat 0 -18px;
+}
+::-webkit-scrollbar-button:end:hover {
+  background: url("../images/scrollbar_arrow.png") no-repeat -15px -18px;
+}
+::-webkit-scrollbar-button:end:active {
+  background: url("../images/scrollbar_arrow.png") no-repeat -30px -18px;
 }

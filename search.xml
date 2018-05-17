@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title>hexo+github搭建博客记录</title>
+      <link href="/2018/05/17/hexo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/"/>
+      <url>/2018/05/17/hexo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/</url>
+      <content type="html"><![CDATA[<p><strong>hexo：</strong> </p><p>A fast, simple &amp; powerful blog framework, powered by Node.js<br>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.<br><a id="more"></a><br><strong>步骤记录：</strong></p><ol><li>安装node.js</li><li>安装git</li><li>用npm安装hexo和需要的其他组件</li><li>github新建项目：username.github.io;（如果之前没有配置过github的ssh）配置github的ssh可以实现免密登录或只输入ssh的密码。参考github的ssh</li><li>修改一些配置如主题等，并部署到github</li></ol><p><strong>注意事项：</strong></p><ol><li>hexo d 部署时，如果是windows系统需要用git 的命令行，会弹出对话框输入ssh的密码（生成SSH是设置的）,因为windows的命令行不会弹出对话框输入密码，会提示权限错误。参考hexo deploy出错</li><li>.yml文件格式比较严格，:之后一定要有一个空格在输入值，不填则为默认值</li></ol><p><strong>常用命令：</strong></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init           // 创建一个新的hexo项目</span><br><span class="line">$ hexo new mynewblog  // 新建一篇标题为mynewblog的文章</span><br><span class="line">$ hexo server         // 为hexo在本地起一个http server, 然后通过浏览器访问博客</span><br><span class="line">$ hexo generate       // 生成将要发布的博客网站包含html在内的静态资源</span><br><span class="line">$ hexo deploy         // 将generate的结果发布到_config.yml中指定的仓库</span><br></pre></td></tr></table></figure><p><strong>参考：</strong></p><ul><li><a href="http://coderunthings.com/2017/08/20/howhexoworks/" target="_blank" rel="noopener">hexo是如何工作的</a></li><li><a href="http://tengj.top/2016/02/20/hexoTotal/" target="_blank" rel="noopener">hexo干货系列</a></li><li><a href="https://www.cnblogs.com/xsilence/p/6001938.html" target="_blank" rel="noopener">hexo deploy出错</a></li><li><a href="https://www.jianshu.com/p/c2afc7888942" target="_blank" rel="noopener">github的ssh</a></li></ul>]]></content>
+      
+      <categories>
+          
+          <category> 搭建博客 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> github </tag>
+            
+            <tag> npm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+  
+  
+</search>
